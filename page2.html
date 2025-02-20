@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page 1 | Nike</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Kanit", sans-serif;
+            background-color: #0f0f0f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #0f0f0f;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo {
+            width: 80px;
+            height: auto;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .text-container {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .text-container h2 {
+            font-size: 10rem;
+            font-weight: bold;
+        }
+
+        .text-container h3 {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .additional-text-container {
+            text-align: center;
+            background-color: #0f0f0f;
+            padding: 80px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        .additional-text-container h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .additional-text-container h2 {
+            font-size: 2.5rem;
+            margin-top: 10px;
+        }
+
+        .additional-text-container h3 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        .additional-text-container h4 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        .additional-text-container h5 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        .additional-text-container h6 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        /* ปรับขนาดภาพให้ใหญ่ขึ้น */
+        .image-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .image-container img {
+            width: 100%; /* กำหนดให้ภาพขยายเต็มความกว้างของหน้าจอ */
+            height: auto;
+            border-radius: 8px;
+            margin-top: 5px;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .image-caption h2 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .back-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+
+        .back-link:hover {
+            color: #ccc;
+        }
+
+        .additional-image-container {
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            gap: 0; /* กำหนดให้ช่องว่างระหว่างภาพเป็น 0 */
+        }
+
+        .additional-image-container img {
+            width: 50%; /* ขยายภาพให้เต็มพื้นที่ครึ่งหนึ่งของคอนเทนเนอร์ */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* สไตล์สำหรับลิงค์ "เรื่องราว" และ "บริษัท" */
+        .story-link {
+            position: absolute; /* ใช้ absolute */
+            top: 20px;
+            right: 120px; /* เพิ่มระยะห่างจากขวา */
+            background-color: #0f0f0f;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .company-link {
+            position: absolute; /* ใช้ absolute */
+            top: 20px; /* ตั้งตำแหน่งให้ตรงกับ "เรื่องราว" */
+            right: 20px; /* อยู่ข้างๆ "เรื่องราว" */
+            background-color: #0f0f0f;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .story-link:hover, .company-link:hover {
+            background-color: transparent;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="LogoNike.png" class="logo" alt="Nike Logo">
+    </a>
+</header>
+
+<!-- ลิงก์ "เรื่องราว" และ "บริษัท" -->
+<a href="story.html" class="story-link">เรื่องราว</a>
+<a href="page3.html" class="company-link">บริษัท</a>
+
+<div class="content">
+    <div class="additional-text-container">
+        <h1>วิธีที่ Steve</h1>
+        <h2>Prefontaine เป็นแบบอย่างให้กับ Nike</h2>
+        <h3>การฝึกฝนและการแข่งขัน</h3>
+        <h4>การวิ่งเป็นชีวิตและจิตวิญญาณ</h4>
+        <h5>แรงบันดาลใจที่มาจากการทุ่มเท</h5>
+        <h6>การเผชิญหน้ากับความท้าทายและความสำเร็จ</h6>
+    </div>
+
+    <div class="image-container">
+        <img src="Steve Prefontaine1.jpg" alt="Bill Bowerman Image">
+        <div class="image-caption">
+            <h2>
+                ในปี 1973 สองปีหลังจากที่แบรนด์ Nike ถือกำเนิดและ Swoosh ปรากฏบนรองเท้าเป็นครั้งแรก บริษัทรองเท้าใหม่มาแรงแห่งนี้ได้เซ็นสัญญากับนักวิ่งดาวรุ่งคนแรก ชาวโอเรกอนผู้น่าทึ่งคนนี้เป็นเจ้าของสถิติมากมายในด้านการวิ่งทางไกลของอเมริกา เคยลงแข่งกรีฑารายการที่ยิ่งใหญ่ที่สุดซึ่งจัดขึ้นที่มิวนิกเมื่อปี 1972 และปรากฏตัวบนหน้าปกนิตยสาร Sports Illustrated ในฐานะ "อัจฉริยบุคคลแห่งการวิ่งทางไกลของอเมริกา"
+                <br><br>
+                อัจฉริยบุคคลผู้นั้นก็คือ Steve Prefontaine ชายหนุ่มวัย 22 ปีผู้เป็นนักกรีฑาที่โด่งดังที่สุดของอเมริกา เขามีความมุ่งมั่นแน่วแน่ดั่งนักรบ และวิ่งในทุกงานแข่งอย่างเต็มที่ราวกับเดิมพันด้วยชีวิต เขามีจิตวิญญาณแห่งการแข่งขันอันร้อนแรง กลยุทธ์การแข่งขันที่เด็ดเดี่ยว และเสน่ห์ติดตัวที่ดึงดูดผู้คนพร้อมสร้างแรงบันดาลใจให้เหล่านักวิ่งดาวรุ่งมุ่งมั่นกับกีฬานี้และทุ่มเทอย่างสุดตัว
+            </h2>
+        </div>
+    </div>
+
+    <div class="additional-image-container">
+        <img src="Steve Prefontaine2.png" alt="Additional Image">
+        <img src="Steve Prefontaine3.png" alt="Additional Image">
+    </div>
+
+    <div class="image-caption">
+        <h2>มุ่งสู่ความเป็นเลิศ</h2>
+        <h3>Pretontaine ในวัย 15 ปีลงแข่งในฐานะตัวแทนนักกีฬาจาก Marshfield High School ในเมืองคูส์เบย์ รัฐโอเรกอน เขาลงแข่งวิ่ง 2 ไมล์และได้ทำลายสถิติระดับประเทศเป็นครั้งแรกด้วยเวลา 8:41.5 นาที นอกจากนี้ยังครองแชมป์วิ่งครอสคันทรี่ระดับรัฐสองปีซ้อนตั้งแต่ปี 1968-1969 และไม่เคยแพ้ให้ใครเลยในงานแข่งวิ่งครอสคันทรี่และวิ่งลู่สมัยม.5 และม.6 ในช่วงมัธยมปลายปีสุดท้าย Prefontaine เป็นที่ต้องการตัว
+    </div>
+</div>
+
+</body>
+</html>

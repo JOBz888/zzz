@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page 1 | Nike</title>
+    
+    <style>
+        /* เพิ่มฟอนต์ K2D-ThinItalic */
+        @font-face {
+            font-family: 'K2D-ThinItalic';
+            src: url('fonts/K2D-ThinItalic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "Kanit", sans-serif;
+            background-color: #0f0f0f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #0f0f0f;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            width: 80px;
+            height: auto;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        /* การจัดตำแหน่งลิงก์ข้างๆ กัน */
+        .header-links {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 20px; /* เพิ่มระยะห่างระหว่างลิงก์ */
+            z-index: 1100; /* ทำให้มุมของลิงก์เท่ากัน */
+        }
+        .story-link {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 5px;
+            transition: color 0.3s;
+        }
+
+        .back-link, .story-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        .back-link:hover, .story-link:hover {
+            color: #ccc;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .text-container {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .text-container h2 {
+            font-size: 10rem;
+            font-weight: bold;
+        }
+
+        .text-container p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .additional-text-container {
+            text-align: center;
+            background-color: #0f0f0f;
+            padding: 80px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        /* ใช้ฟอนต์ K2D-ThinItalic */
+        .additional-text-container h3,
+        .additional-text-container p {
+            font-family: 'K2D-ThinItalic', sans-serif;
+        }
+
+        .additional-text-container h3 {
+            font-size: 2.0rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .additional-text-container p {
+            font-size: 4rem;
+            margin-top: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 5px;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .image-caption p {
+            font-family: 'K2D-ThinItalic', sans-serif;
+        }
+
+        .back-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+
+        .back-link:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="LogoNike.png" class="logo" alt="Nike Logo">
+    </a>
+
+    <!-- ส่วนของลิงก์ที่อยู่ข้างๆ กัน -->
+    <div class="header-links">
+        <a href="story.html" class="back-link">เรื่องราว</a>
+        <a href="page3.html" class="story-link">บริษัท</a> <!-- ลิงก์ใหม่สำหรับ "บริษัท" -->
+        <a href="https://www.nike.com/th/w/seasonal-sale-lt4x" class="story-link" target="_blank">สินค้า Nike</a>
+    </div>
+</header>
+
+<div class="content">
+    <div class="additional-text-container">
+        <h3><i>นวัตกรรม เรื่องเด่น</i></h3>
+        <p><i>Bill Bowerman: นักนวัตกรรมคนเริ่มแรกของ Nike</i></p>
+    </div>
+
+    <div class="image-container">
+        <img src="Bill Bowerman 1.jpg" alt="Bill Bowerman Image">
+        <div class="image-caption">
+            <p>
+                ในช่วงปลายทศวรรษที่ 1950 Bill Bowerman โค้ชกรีฑาผู้มากประสบการณ์ไม่พอใจกับรองเท้าวิ่งพื้นตะปูที่มีอยู่ซึ่งสร้างขึ้นจากหนังและโลหะที่หนัก ด้วยเหตุนี้ เขาจึงหมกมุ่นกับการหาทางลดน้ำหนักของรองเท้าเพื่อช่วยให้นักวิ่งวิ่งได้เร็วขึ้น ภารกิจของเขาจบลงด้วยการสร้างนิยามใหม่ให้กับรองเท้ากีฬา
+                ...
+            </p>
+            <div class="extra-section">
+                <h2 style="font-size: 3rem; font-weight: bold;">"รองเท้าต้องมีองค์ประกอบ 3 อย่าง"</h2>
+                <ol style="font-size: 2.2rem; text-align: center; font-family: 'K2D-ThinItalic', sans-serif; list-style-position: inside;">
+                    <li>ต้องเบา</li>
+                    <li>ใส่สบาย</li>
+                    <li>ไปได้ไกล</li>
+                </ol>
+                <p style="font-size: 2.5rem; text-align: center; font-family: 'K2D-ThinItalic', sans-serif;">
+                <ul>
+                    <li>เขาคิดว่ารองเท้าวิ่งน่าจะดีกว่านี้ได้</li>
+                    <li>เขาท้าทายแนวคิดที่เป็นที่ยอมรับ ทั้งเรื่องการยึดเกาะ</li>
+                    <li>การลดแรงกระแทก ชีวกลศาสตร์ และแม้แต่กายวิภาคศาสตร์เองก็ตาม</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

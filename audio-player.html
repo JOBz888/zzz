@@ -1,0 +1,17 @@
+<!-- audio-player.html -->
+<audio id="background-audio" autoplay loop>
+    <source src="videoplayback.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<script>
+    // Check if music is already playing in localStorage
+    if (!localStorage.getItem('musicPlaying')) {
+        document.getElementById('background-audio').play();
+        localStorage.setItem('musicPlaying', 'true');
+    }
+
+    // Save music playing status when the page is closed or refreshed
+    window.onbeforeunload = function() {
+        localStorage.setItem('musicPlaying', 'true');
+    };
+</script>

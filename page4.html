@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางใน Nike พร้อม Radio Buttons, Check Boxes, Drop Down และ Buttons</title>
+
+    <iframe src="https://www.wikipedia.org" width="600" height="400"></iframe>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: rgb(255, 0, 0);
+        }
+        td:nth-child(odd) {
+            background-color: #6f00ff;
+        }
+        td:nth-child(even) {
+            background-color: #00ffbf;
+        }
+
+        form {
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 2px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 18px;
+            padding: 0 10px;
+            color: green; /* เปลี่ยนสีหัวข้อ */
+        }
+
+        label {
+            display: inline-block;
+            margin: 10px 0 5px;
+            color: green;
+        }
+
+        input, textarea, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* สไตล์เพิ่มเติมสำหรับ radio และ checkbox */
+        .radio-group, .checkbox-group {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .radio-group input, .checkbox-group input {
+            margin-right: 10px;
+        }
+
+        .radio-group label, .checkbox-group label {
+            display: inline-block;
+            margin-right: 20px;
+            color: green; /* สีเขียวสำหรับ label */
+        }
+
+        button[type="submit"], button[type="reset"] {
+            width: auto;
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button[type="reset"] {
+            background-color: red;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center; color: green;">ตัวอย่างตาราง nike</h2>
+    
+    <table>
+        <tr>
+            <th>ชื่อ</th>
+            <th>อายุ</th>
+            <th>อาชีพ</th>
+        </tr>
+        <tr>
+            <td>Philip H.Knight</td>
+            <td>86</td>
+            <td>ประธานกิตติคุณ</td>
+        </tr>
+        <tr>
+            <td>Mark Parker</td>
+            <td>68</td>
+            <td>ประธานฝ่ายบริหาร</td>
+        </tr>
+        <tr>
+            <td>Venkatesh Alagirisamy</td>
+            <td>40</td>
+            <td>ประธานเจ้าหน้าที่ฝ่ายซัพพลายเชน</td>
+        </tr>
+    </table>
+
+    <h2 style="text-align: center; color: green;">กรอกข้อมูล</h2>
+    <form>
+        <fieldset> 
+            <legend>Text Boxes</legend>
+            <label for="name">ชื่อ:</label>
+            <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ">
+    
+            <label for="email">อีเมล์:</label>
+            <input type="email" id="email" name="email" placeholder="กรอกอีเมล์ของคุณ">
+        </fieldset>
+    
+        <fieldset>
+            <legend>ความคิดเห็น (Text Area)</legend>
+            <label for="comment">ความคิดเห็นของคุณ:</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="กรอกความคิดเห็นของคุณ"></textarea>
+        </fieldset>
+    
+        <fieldset> 
+            <legend>Radio Buttons</legend>  
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">อื่นๆ</label>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Check Boxes</legend>
+            <div class="checkbox-group">
+                <input type="checkbox" id="nike" name="interests" value="nike">
+                <label for="nike">Nike</label>
+                <input type="checkbox" id="adidas" name="interests" value="adidas">
+                <label for="adidas">Adidas</label>
+                <input type="checkbox" id="puma" name="interests" value="puma">
+                <label for="puma">Puma</label>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Drop Down List</legend>
+            <div class="dropdown-group">
+                <label for="brand">เลือกแบรนด์ที่ชื่นชอบ:</label>
+                <select id="brand" name="brand">
+                    <optgroup label="Sportswear">
+                        <option value="nike">Nike</option>
+                        <option value="adidas">Adidas</option>
+                        <option value="puma">Puma</option>
+                    </optgroup>
+                    <optgroup label="Other Brands">
+                        <option value="underarmour">Under Armour</option>
+                        <option value="reebok">Reebok</option>
+                        <option value="newbalance">New Balance</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+    
+        <button type="submit">ส่งข้อมูล</button>
+        <button type="reset">รีเซ็ต</button>
+    </form>
+    
+</body>
+</html>
